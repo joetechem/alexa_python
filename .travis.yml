@@ -1,7 +1,7 @@
 language: python
 python:
-  - '2.7'
-script: ./unittests
+- '2.7'
+script: "./unittests"
 deploy:
   provider: lambda
   function_name: vaSaveOurStreams
@@ -10,9 +10,9 @@ deploy:
   runtime: python3.6
   module_name: alexa_py
   handler_name: lambda_handler
-  zip: ./src
+  zip: "./src"
   access_key_id: AKIAJULVACVMKHJUMH7A
   on:
     branch: master
   secret_access_key:
-    secure:
+    secure: o0QsXd/isHI8mm+ndqASLkybtwN8KZNkUPFHeNY+NSx6lWWfihx/yOTi7CnsCtvNyCROmJYRnku8U9RCVCpJdWfH+BGs/BBNGWKI7szfxYCyxtuFCRgYCO8qYG7FCUKqScgZycV65lzV6m1i7LuhDHJHlVvsskcgFCSF70V001RqJvZ/JfVfx2lScM9JDQWfzV+WwWZ2oeT4rhGgq/P08ZxSKlAv4VKzu90mpsFVCg+SKePLFhvPgdmi7AaAglcJPYL/3doVz2RZXo95p9OlHS0rZC9mljPFaUKGyYpqyZ7QArM8A/1IRGMwx0LC6JXHtWYjhQinwBNRbEwaOJPfKPj+lWAaEuZby/5IkT3KAhB+BbAmj8bHOb03DSLhR/1QhC3lG0KmA19jApgnOweK80phucJkSc9NEEFbK2IDlhQG229/jIqBKq9HkKga10qXtsRgozy9qOdpQkoZk9BwXDoS0LBM6Zxay43MeKvva0HuvDFRR2bB4RjWOIS0Rdu7Hzp003PWOOg7gsH5L9oTwhqyZzEOovUbpY0GRm4HFdePKiVoVCIE2xpdUc1VGFO62GZY31KiW2ahJdiYN7aED9d5D6YYkljPlHh3gLLnBj+PGK2wMyTTX/e7mAC/nQh4/kBhjqLBoiO+IaUO8Wcq/xh755P6DeGkn0E1+kje528=
