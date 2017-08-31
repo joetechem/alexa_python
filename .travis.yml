@@ -4,7 +4,7 @@ python:
 script: ./unittests
 deploy:
   provider: lambda
-  function_name: VASOS
+  function_name: vaSaveOurStreams
   region: us-east-1
   role: arn:aws:iam::984814083532:role/lambda_basic_execution
   runtime: python3.6
